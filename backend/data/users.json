@@ -1,0 +1,14 @@
+{
+  "admin": {
+    "username": "admin",
+    "email": "admin@infodiode.local",
+    "full_name": "Администратор",
+    "hashed_password": "$2b$12$TPhsu6PmT81tFf4ufiT2O.KLcby19k9o9PC4uY.1.Wd9r2L1iKtfy",
+    "email_recipients": [
+      "admin@infodiode.local"
+    ],
+    "default_recipient": "admin@infodiode.local",
+    "theme": "dark",
+    "created_at": 1775875854.022952
+  }
+}

@@ -1,0 +1,134 @@
+services:
+  llama-server:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./backend/models:/models:ro
+    ports:
+      - "8090:8090"
+    command: >
+      --model /models/qwen3.5/Qwen3.5-4B-Q4_K_M.gguf
+      --mmproj /models/qwen3.5/mmproj-F32.gguf
+      --port 8090
+      --n-gpu-layers 99
+      --ctx-size 8192
+      --chat-template-kwargs {"enable_thinking":false}
+      --image-min-tokens 1024
+      --temp 0.6 --top-p 0.95 --top-k 20
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8090/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  gpu-pipeline:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - INFODIODE_DOCKER=true
+      - INFODIODE_REDIS_URL=redis://redis:6379/0
+      - INFODIODE_CELERY_BROKER_URL=redis://redis:6379/0
+      - INFODIODE_CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - INFODIODE_SMTP_HOST=mailpit
+      - INFODIODE_INPUT_VIDEOS_DIR=/app/data/input_videos
+      - INFODIODE_OUTPUT_XML_DIR=/app/data/output_xml
+      - INFODIODE_QR_CODES_DIR=/app/data/qr_codes
+      - INFODIODE_ENCRYPTION_KEYS_DIR=/app/data/encryption_keys
+      - INFODIODE_MODELS_DIR=/app/models
+      - INFODIODE_VLM_BASE_URL=http://llama-server:8090
+    volumes:
+      - video-data:/app/data
+      - model-cache:/app/models
+    ports:
+      - "8000:8000"
+    depends_on:
+      llama-server:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  celery-worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - INFODIODE_DOCKER=true
+      - INFODIODE_REDIS_URL=redis://redis:6379/0
+      - INFODIODE_CELERY_BROKER_URL=redis://redis:6379/0
+      - INFODIODE_CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - INFODIODE_SMTP_HOST=mailpit
+      - INFODIODE_INPUT_VIDEOS_DIR=/app/data/input_videos
+      - INFODIODE_OUTPUT_XML_DIR=/app/data/output_xml
+      - INFODIODE_QR_CODES_DIR=/app/data/qr_codes
+      - INFODIODE_ENCRYPTION_KEYS_DIR=/app/data/encryption_keys
+      - INFODIODE_MODELS_DIR=/app/models
+    volumes:
+      - video-data:/app/data
+      - model-cache:/app/models
+    command: ["python3.12", "-m", "celery", "-A", "app.celery_app", "worker", "--loglevel=info", "--concurrency=1"]
+    depends_on:
+      llama-server:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - PUBLIC_API_URL=http://gpu-pipeline:8000
+    depends_on:
+      - gpu-pipeline
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    environment:
+      - MP_SMTP_AUTH_ACCEPT_ANY=1
+      - MP_SMTP_AUTH_ALLOW_INSECURE=1
+
+volumes:
+  video-data:
+  model-cache:
+  redis-data:

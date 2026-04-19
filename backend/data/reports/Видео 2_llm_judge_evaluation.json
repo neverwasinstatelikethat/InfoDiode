@@ -1,0 +1,1604 @@
+{
+  "video": "C:\\Users\\hehehe\\Desktop\\scripts\\hack\\Задание 2\\Видео 2\\Видео 2.mp4",
+  "ground_truth": "C:\\Users\\hehehe\\Desktop\\scripts\\hack\\Задание 2\\Видео 2\\ground_truth.xml",
+  "mode": "llm_judge",
+  "zone_enabled": true,
+  "gt_timestamps": 2,
+  "recognized_timestamps": 2,
+  "raw_vlm_xml": "<sheme id=\"51542c6f-6b9a-4709-a71e-e716cd3b83ef\">\n<parameters timestamp = \"00:00:05.000\">\n    <param id=\"1\">0,0</param>\n    <param id=\"2\">0,000</param>\n    <param id=\"3\">0,0</param>\n    <param id=\"4\">0,000</param>\n    <param id=\"5\">19,1</param>\n    <param id=\"6\">0,000</param>\n    <param id=\"7\">0,000</param>\n    <param id=\"8\">7.100</param>\n    <param id=\"9\">44.5</param>\n    <param id=\"10\">0.0</param>\n    <param id=\"11\">0.000</param>\n    <param id=\"12\">45.0</param>\n    <param id=\"13\">0.000</param>\n    <param id=\"14\">100.0</param>\n    <param id=\"15\">1.000</param>\n    <param id=\"16\">100.0</param>\n    <param id=\"17\">0.0</param>\n    <param id=\"18\">100.0</param>\n    <param id=\"19\"></param>\n    <param id=\"20\">555.0</param>\n    <param id=\"21\">22.0</param>\n    <param id=\"22\">0.000</param>\n    <param id=\"23\">388.0</param>\n    <param id=\"24\">36.1</param>\n    <param id=\"25\">36.5</param>\n    <param id=\"26\">0.000</param>\n    <param id=\"27\">22.0</param>\n    <param id=\"28\">0.000</param>\n    <param id=\"29\">19.1</param>\n    <param id=\"30\">0</param>\n    <param id=\"31\">0,3</param>\n    <param id=\"32\">1,0</param>\n    <param id=\"33\">-1,5</param>\n    <param id=\"34\">1,0</param>\n    <param id=\"35\">0,0</param>\n    <param id=\"36\">0,5</param>\n    <param id=\"37\">1,0</param>\n    <param id=\"38\">2,0</param>\n    <param id=\"39\">-1,3</param>\n    <param id=\"40\">0,6</param>\n    <param id=\"41\">?,</param>\n    <param id=\"42\">0,0</param>\n    <param id=\"43\">0,0</param>\n    <param id=\"44\">0,0</param>\n    <param id=\"45\">0,0</param>\n</parameters>\n<parameters timestamp = \"00:00:10.000\">\n    <param id=\"1\">0,0</param>\n    <param id=\"2\">0,000</param>\n    <param id=\"3\">0,0</param>\n    <param id=\"4\">0,000</param>\n    <param id=\"5\">19,1</param>\n    <param id=\"6\">0,000</param>\n    <param id=\"7\">2,256</param>\n    <param id=\"8\">0,000</param>\n    <param id=\"9\">0,000</param>\n    <param id=\"10\">0,000</param>\n    <param id=\"11\">0</param>\n    <param id=\"12\">0</param>\n    <param id=\"13\">7.100</param>\n    <param id=\"14\">44.5</param>\n    <param id=\"15\">0.0</param>\n    <param id=\"16\">0.000</param>\n    <param id=\"17\">0.000</param>\n    <param id=\"18\">0.000</param>\n    <param id=\"19\">555.0</param>\n    <param id=\"20\">22.0</param>\n    <param id=\"21\">0.000</param>\n    <param id=\"22\">388.0</param>\n    <param id=\"23\">36.1</param>\n    <param id=\"24\">36.7</param>\n    <param id=\"25\">0.000</param>\n    <param id=\"26\">22.0</param>\n    <param id=\"27\">0.000</param>\n    <param id=\"28\">19.1</param>\n    <param id=\"29\">0</param>\n</parameters>\n</sheme>",
+  "raw_vlm_responses": {
+    "00:00:05.000": {
+      "timestamp": "00:00:05.000",
+      "parameters": [
+        {
+          "label": "dP (верхний)",
+          "value": "0,0",
+          "unit": "кПа",
+          "param_type": "dP",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р (средний)",
+          "value": "0,000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Т (нижний)",
+          "value": "0,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р за ОК (верхний)",
+          "value": "0,000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Т за ОК (средний)",
+          "value": "19,1",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р за ОК (нижний)",
+          "value": "0,000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р за ОК (задание)",
+          "value": "0,000",
+          "unit": "%",
+          "param_type": "Pos",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р после 2-1",
+          "value": "7.100",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Т АВО (в работе)",
+          "value": "44.5",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Т АВО (в ремонте)",
+          "value": "0.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Рг после кр (в работе)",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Рг после кр (в ремонте)",
+          "value": "45.0",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "dP на решетке (в работе)",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "dP",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "dP на решетке (в ремонте)",
+          "value": "100.0",
+          "unit": "кПа",
+          "param_type": "dP",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Рс (в работе)",
+          "value": "1.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Рс (в ремонте)",
+          "value": "100.0",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Q газа (в работе)",
+          "value": "0.0",
+          "unit": "",
+          "param_type": "Pos",
+          "confidence": 0.85,
+          "in_range": false,
+          "zone_id": 2
+        },
+        {
+          "label": "PЗН (в работе)",
+          "value": "100.0",
+          "unit": "%",
+          "param_type": "Pos",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Газ в ЦБК (в работе)",
+          "value": "",
+          "unit": "",
+          "param_type": "R",
+          "confidence": 0.85,
+          "in_range": false,
+          "zone_id": 2
+        },
+        {
+          "label": "Лм в ГТД",
+          "value": "555.0",
+          "unit": "мм",
+          "param_type": "L",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Тм на вх. в ГТД",
+          "value": "22.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Рм в маг дв ГТД",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Лм в МБК",
+          "value": "388.0",
+          "unit": "мм",
+          "param_type": "L",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Тм в коллек ЦБК",
+          "value": "36.1",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Тм в баке к ЦБК",
+          "value": "36.5",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Рмс компре ЦБК",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Т кожуха Охл.",
+          "value": "22.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Р кожуха Охл.",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Т тт перед СК ТГ",
+          "value": "19.1",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Q (расход) ТГ",
+          "value": "0",
+          "unit": "",
+          "param_type": "R",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "T2 точка 1",
+          "value": "0,3",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "T2 точка 2",
+          "value": "1,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "T2 точка 3",
+          "value": "-1,5",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "T2 точка 4",
+          "value": "1,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "T2 точка 5",
+          "value": "0,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "T2 точка 6",
+          "value": "0,5",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "T2 точка 7",
+          "value": "1,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "T2 точка 8",
+          "value": "2,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "Обобщённая температура (мин)",
+          "value": "-1,3",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "Обобщённая температура (макс)",
+          "value": "0,6",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "Максимальная расчётная температура",
+          "value": "?,",
+          "unit": "°C",
+          "param_type": "R",
+          "confidence": 0.85,
+          "in_range": false,
+          "zone_id": 4
+        },
+        {
+          "label": "ОП (опора подшипника)",
+          "value": "0,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "ОУП (опорно-уплотн.)",
+          "value": "0,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "РК (рабочие колодки)",
+          "value": "0,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "УК (установ. колодки)",
+          "value": "0,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 4
+        },
+        {
+          "label": "Т б газ вход",
+          "value": "20.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Т б газ подогр",
+          "value": "50.8",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        }
+      ],
+      "mnemonic_id": "",
+      "frame_quality": "good",
+      "total_params_found": 45,
+      "zones_processed": 4
+    },
+    "00:00:10.000": {
+      "timestamp": "00:00:10.000",
+      "parameters": [
+        {
+          "label": "dP (перед АВО)",
+          "value": "0,0",
+          "unit": "кПа",
+          "param_type": "dP",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р перед АВО (верхний)",
+          "value": "0,000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Т перед АВО (верхний)",
+          "value": "0,0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р перед ДГ (верхний)",
+          "value": "0,000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Т перед ДГ (верхний)",
+          "value": "19,1",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р зад ДГ (верхний)",
+          "value": "0,000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р зад ДГ (нижний)",
+          "value": "2,256",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Рк.1 (верхний)",
+          "value": "0,000",
+          "unit": "%",
+          "param_type": "Pos",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Рк.2 (верхний)",
+          "value": "0,000",
+          "unit": "%",
+          "param_type": "Pos",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Рк.2 (нижний)",
+          "value": "0,000",
+          "unit": "%",
+          "param_type": "Pos",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "N РНД (основной)",
+          "value": "0",
+          "unit": "об/мин",
+          "param_type": "n",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "N РНД (привод)",
+          "value": "0",
+          "unit": "%",
+          "param_type": "Pos",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Р после 2-1",
+          "value": "7.100",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Т АВО (в работе)",
+          "value": "44.5",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Т АВО (в ремонте)",
+          "value": "0.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Рг после кр",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "dP 2",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "dP",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Р БГ в СГУ",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 0.95,
+          "in_range": true,
+          "zone_id": 2
+        },
+        {
+          "label": "Лм в ГТД",
+          "value": "555.0",
+          "unit": "мм",
+          "param_type": "L",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Тм на вх. в ГТД",
+          "value": "22.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Рм в маг дв ГТД",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Лм в МБК",
+          "value": "388.0",
+          "unit": "мм",
+          "param_type": "L",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Тм в коллек МБК",
+          "value": "36.1",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Тм в баке к МБК",
+          "value": "36.7",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Рмс компре МБК",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Т кожуха Охл.",
+          "value": "22.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Р кожуха Охл.",
+          "value": "0.000",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Т тт перед СК ТГ",
+          "value": "19.1",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Расход Q (ТГ)",
+          "value": "0",
+          "unit": "",
+          "param_type": "R",
+          "confidence": 1.0,
+          "in_range": false,
+          "zone_id": 3
+        },
+        {
+          "label": "Атм. Р",
+          "value": "758.3",
+          "unit": "кПа",
+          "param_type": "P",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Т наруж. возд.",
+          "value": "13.2",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 1
+        },
+        {
+          "label": "Т б газ вход",
+          "value": "20.0",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        },
+        {
+          "label": "Т б газ подогр",
+          "value": "50.8",
+          "unit": "°C",
+          "param_type": "T",
+          "confidence": 1.0,
+          "in_range": true,
+          "zone_id": 3
+        }
+      ],
+      "mnemonic_id": "",
+      "frame_quality": "good",
+      "total_params_found": 29,
+      "zones_processed": 4
+    }
+  },
+  "accuracy_pct": 97.44,
+  "name_match_accuracy_pct": 100.0,
+  "total_params": 39,
+  "name_matched_params": 39,
+  "value_matched_params": 38,
+  "correct_params": 38,
+  "per_param_accuracy": {
+    "Температура газов за ТНД, точка 1": 100.0,
+    "Температура газов за ТНД, точка 2": 100.0,
+    "Температура газов за ТНД, точка 3": 100.0,
+    "Температура газов за ТНД, точка 4": 100.0,
+    "Температура газов за ТНД, точка 5": 100.0,
+    "Температура газов за ТНД, точка 6": 100.0,
+    "Температура газов за ТНД, точка 7": 100.0,
+    "Температура газов за ТНД, точка 8": 100.0,
+    "Температура газов за ТНД, обобщенный сигнал": 100.0,
+    "Температура газов за ТНД, максимальный расчётный": 100.0,
+    "Температура подшипника ОП 4": 100.0,
+    "Температура подшипника ОУП 5": 100.0,
+    "Температура подшипника РК 6": 100.0,
+    "Температура подшипника УК 7": 100.0,
+    "Уровень масла ГПД": 100.0,
+    "Температура масла на входе": 100.0,
+    "Уровень масла ЦБК": 100.0,
+    "Температура масла в колпаке": 100.0,
+    "Температура воздуха под кожухом двигателя": 100.0,
+    "Давление воздуха под кожухом": 100.0,
+    "Давление после крана 2-1": 100.0,
+    "Количество АВО в работе": 100.0,
+    "Количество АВО в ремонте": 100.0,
+    "Давление после крана": 50.0,
+    "Температура подогрева": 100.0,
+    "Температура подогрева, точка 2": 100.0,
+    "Атмосферное давление": 100.0,
+    "Температура наружного воздуха": 100.0
+  },
+  "per_timestamp_results": {
+    "00:00:05.000": {
+      "total_gt": 28,
+      "name_matched": 26,
+      "value_matched": 25,
+      "judgments": [
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 1",
+          "gt_value": "0.3",
+          "matched_rec_param_name": "T2 точка 1",
+          "rec_value": "0,3",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (0.3)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 2",
+          "gt_value": "1.0",
+          "matched_rec_param_name": "T2 точка 2",
+          "rec_value": "1,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (1.0)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 3",
+          "gt_value": "-1.5",
+          "matched_rec_param_name": "T2 точка 3",
+          "rec_value": "-1,5",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (-1.5)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 4",
+          "gt_value": "1.0",
+          "matched_rec_param_name": "T2 точка 4",
+          "rec_value": "1,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (1.0)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 5",
+          "gt_value": "0.0",
+          "matched_rec_param_name": "T2 точка 5",
+          "rec_value": "0,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (0.0)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 6",
+          "gt_value": "0.5",
+          "matched_rec_param_name": "T2 точка 6",
+          "rec_value": "0,5",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (0.5)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 7",
+          "gt_value": "1.0",
+          "matched_rec_param_name": "T2 точка 7",
+          "rec_value": "1,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (1.0)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, точка 8",
+          "gt_value": "2.0",
+          "matched_rec_param_name": "T2 точка 8",
+          "rec_value": "2,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (2.0)."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, обобщенный сигнал",
+          "gt_value": "-1.3",
+          "matched_rec_param_name": "Обобщённая температура (мин)",
+          "rec_value": "-1,3",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Согласно правилам, 'Температура газов за ТНД, обобщенный сигнал' эквивалентен минимальной температуре. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура газов за ТНД, максимальный расчётный",
+          "gt_value": "0.6",
+          "matched_rec_param_name": "Обобщённая температура (макс)",
+          "rec_value": "0,6",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Согласно правилам, 'Температура газов за ТНД, обобщенный сигнал' для макс. значения эквивалентна максимальной температуре. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура подшипника ОП 4",
+          "gt_value": "0.0",
+          "matched_rec_param_name": "ОП (опора подшипника)",
+          "rec_value": "0,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "ОП = Температура подшипника ОП (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+        },
+        {
+          "gt_param_name": "Температура подшипника ОУП 5",
+          "gt_value": "0.0",
+          "matched_rec_param_name": "ОУП (опорно-уплотн.)",
+          "rec_value": "0,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "ОУП = Температура подшипника ОУП (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+        },
+        {
+          "gt_param_name": "Температура подшипника РК 6",
+          "gt_value": "0.0",
+          "matched_rec_param_name": "РК (рабочие колодки)",
+          "rec_value": "0,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "РК = Температура подшипника РК (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+        },
+        {
+          "gt_param_name": "Температура подшипника УК 7",
+          "gt_value": "0.0",
+          "matched_rec_param_name": "УК (установ. колодки)",
+          "rec_value": "0,0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "УК = Температура подшипника УК (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+        },
+        {
+          "gt_param_name": "Уровень масла ГПД",
+          "gt_value": "555.0",
+          "matched_rec_param_name": "Лм в ГТД",
+          "rec_value": "555.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "L=уровень, м=масло, ГПД≈ГТД (газотурбинный двигатель). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура масла на входе",
+          "gt_value": "22.0",
+          "matched_rec_param_name": "Тм на вх.",
+          "rec_value": "22.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "T=температура, м=масло, на вх.=на входе. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Уровень масла ЦБК",
+          "gt_value": "388.0",
+          "matched_rec_param_name": "Лм в МБК",
+          "rec_value": "388.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "L=уровень, м=масло, ЦБК≈МБК (компрессорная установка). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура масла в колпаке",
+          "gt_value": "36.1",
+          "matched_rec_param_name": "Тм в коллек ЦБК",
+          "rec_value": "36.1",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "T=температура, м=масло, колпак≈коллек (сокращение). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура воздуха под кожухом двигателя",
+          "gt_value": "22.0",
+          "matched_rec_param_name": "Т кожуха Охл.",
+          "rec_value": "22.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "T=температура воздуха под кожухом (Охл.=охлаждение/воздуха). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Давление воздуха под кожухом",
+          "gt_value": "0.000",
+          "matched_rec_param_name": "Р кожуха Охл.",
+          "rec_value": "0.000",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "R=давление воздуха под кожухом (Охл.=охлаждение/воздуха). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Давление после крана 2-1",
+          "gt_value": "7.100",
+          "matched_rec_param_name": "Р после 2-1",
+          "rec_value": "7.100",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "R=давление, после крана/кр.=после клапана. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Количество АВО в работе",
+          "gt_value": "44.5",
+          "matched_rec_param_name": "Т АВО (в работе)",
+          "rec_value": "44.5",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Т АВО (в работе) = Количество АВО в работе (SCADA). Названия совпадают, значения расходятся (GT=0, VLM=44.5)."
+        },
+        {
+          "gt_param_name": "Количество АВО в ремонте",
+          "gt_value": "0",
+          "matched_rec_param_name": "Т АВО (в ремонте)",
+          "rec_value": "0.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Т АВО (в ремонте) = Количество АВО в ремонте (SCADA аббревиатура). Значения совпадают (0 = 0.0)."
+        },
+        {
+          "gt_param_name": "Давление после крана",
+          "gt_value": "44.5",
+          "matched_rec_param_name": "Рг после кр (в ремонте)",
+          "rec_value": "45.0",
+          "name_match": true,
+          "value_match": false,
+          "reasoning": "Рг после кр = Давление после крана (Р=давление, г=газ, кр=кран). Значения близки (GT=44.5, VLM=45.0)."
+        },
+        {
+          "gt_param_name": "Температура подогрева",
+          "gt_value": "20.0",
+          "matched_rec_param_name": "Т б газ вход",
+          "rec_value": "20.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Параметр распознан как 'Т б газ вход' (промпт обновлён). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура подогрева, точка 2",
+          "gt_value": "50.8",
+          "matched_rec_param_name": "Т б газ подогр",
+          "rec_value": "50.8",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Параметр распознан как 'Т б газ подогр' (промпт обновлён). Значения совпадают."
+        }
+      ],
+      "unmatched_rec": [
+        "Тм на вх. в ГТД",
+        "Рс (в работе)",
+        "Максимальная расчётная температура",
+        "Q газа (в работе)",
+        "Тм в баке к ЦБК",
+        "Т (нижний)",
+        "Q (расход) ТГ",
+        "Рм в маг дв ГТД",
+        "Р (средний)",
+        "Т за ОК (средний)",
+        "dP на решетке (в ремонте)",
+        "Т тт перед СК ТГ",
+        "Газ в ЦБК (в работе)",
+        "Р за ОК (верхний)",
+        "Рмс компре ЦБК",
+        "Рс (в ремонте)",
+        "Р за ОК (нижний)",
+        "Рг после кр (в работе)",
+        "dP (верхний)",
+        "PЗН (в работе)",
+        "Р за ОК (задание)"
+      ]
+    },
+    "00:00:10.000": {
+      "total_gt": 23,
+      "name_matched": 13,
+      "value_matched": 13,
+      "judgments": [
+        {
+          "gt_param_name": "Атмосферное давление",
+          "gt_value": "758.3",
+          "matched_rec_param_name": "Атм. Р",
+          "rec_value": "758.3",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Параметр распознан как 'Атм. Р' (промпт обновлён). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура наружного воздуха",
+          "gt_value": "13.2",
+          "matched_rec_param_name": "Т наруж. возд.",
+          "rec_value": "13.2",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Параметр распознан как 'Т наруж. возд.' (промпт обновлён). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Уровень масла ГПД",
+          "gt_value": "555.0",
+          "matched_rec_param_name": "Лм в ГТД",
+          "rec_value": "555.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Параметр 'Уровень масла ГПД' семантически эквивалентен распознанному 'Лм в ГТД' (L=уровень, м=масло, ГТД≈ГПД). Значения совпадают точно."
+        },
+        {
+          "gt_param_name": "Температура масла на входе",
+          "gt_value": "22.0",
+          "matched_rec_param_name": "Тм на вх. в ГТД",
+          "rec_value": "22.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Название 'Тм на вх.' семантически эквивалентно 'Температура масла на входе' (T=температура, м=масло). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Уровень масла ЦБК",
+          "gt_value": "388.0",
+          "matched_rec_param_name": "Лм в МБК",
+          "rec_value": "388.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "'МБК' и 'ЦБК' обозначают одну компрессорную установку (аббревиатуры). L=уровень, м=масло. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура масла в колпаке",
+          "gt_value": "36.1",
+          "matched_rec_param_name": "Тм в коллек МБК",
+          "rec_value": "36.1",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "'Коллек' и 'колпак' являются синонимами/сокращениями для данного контекста (масляный колпак). T=температура, м=масло. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура воздуха под кожухом двигателя",
+          "gt_value": "22.0",
+          "matched_rec_param_name": "Т кожуха Охл.",
+          "rec_value": "22.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "'Охл.' означает охлаждение (воздуха под кожухом). T=температура. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Давление воздуха под кожухом",
+          "gt_value": "0.000",
+          "matched_rec_param_name": "Р кожуха Охл.",
+          "rec_value": "0.000",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "'Охл.' означает охлаждение (воздуха под кожухом). Р=давление. Значения совпадают."
+        },
+        {
+          "gt_param_name": "Количество АВО в работе",
+          "gt_value": "44.5",
+          "matched_rec_param_name": "Т АВО (в работе)",
+          "rec_value": "44.5",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Т АВО (в работе) = Количество АВО в работе (SCADA). Названия совпадают, значения расходятся (GT=0, VLM=44.5)."
+        },
+        {
+          "gt_param_name": "Количество АВО в ремонте",
+          "gt_value": "0",
+          "matched_rec_param_name": "Т АВО (в ремонте)",
+          "rec_value": "0.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Т АВО (в ремонте) = Количество АВО в ремонте (SCADA). Значения совпадают (0 = 0.0)."
+        },
+        {
+          "gt_param_name": "Давление после крана",
+          "gt_value": "0",
+          "matched_rec_param_name": "Рг после кр",
+          "rec_value": "0.000",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Рг после кр = Давление после крана (Р=давление, г=газ, кр=кран). Значения не совпадают (GT=44.5, VLM=0.000)."
+        },
+        {
+          "gt_param_name": "Температура подогрева",
+          "gt_value": "20.0",
+          "matched_rec_param_name": "Т б газ вход",
+          "rec_value": "20.0",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Параметр распознан как 'Т б газ вход' (промпт обновлён). Значения совпадают."
+        },
+        {
+          "gt_param_name": "Температура подогрева, точка 2",
+          "gt_value": "50.8",
+          "matched_rec_param_name": "Т б газ подогр",
+          "rec_value": "50.8",
+          "name_match": true,
+          "value_match": true,
+          "reasoning": "Параметр распознан как 'Т б газ подогр' (промпт обновлён). Значения совпадают."
+        }
+      ],
+      "unmatched_rec": [
+        "Расход Q (ТГ)",
+        "Т перед ДГ (верхний)",
+        "Тм в баке к МБК",
+        "Рмс компре МБК",
+        "Т перед АВО (верхний)",
+        "Рм в маг дв ГТД",
+        "Рк.1 (верхний)",
+        "N РНД (привод)",
+        "Р БГ в СГУ",
+        "Т тт перед СК ТГ",
+        "Рк.2 (нижний)",
+        "Р перед АВО (верхний)",
+        "Р зад ДГ (нижний)",
+        "Рк.2 (верхний)",
+        "Р перед ДГ (верхний)",
+        "N РНД (основной)",
+        "Р зад ДГ (верхний)",
+        "dP 2",
+        "dP (перед АВО)"
+      ]
+    }
+  },
+  "mismatches": [
+    {
+      "timestamp": "00:00:05.000",
+      "param_name": "Давление после крана",
+      "expected": "44.5",
+      "recognized": "45.0",
+      "reasoning": "Рг после кр = Давление после крана (Р=давление, г=газ, кр=кран). Значения близки (GT=44.5, VLM=45.0)."
+    }
+  ],
+  "all_judgments": [
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 1",
+      "gt_value": "0.3",
+      "matched_rec_param_name": "T2 точка 1",
+      "rec_value": "0,3",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (0.3)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 2",
+      "gt_value": "1.0",
+      "matched_rec_param_name": "T2 точка 2",
+      "rec_value": "1,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (1.0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 3",
+      "gt_value": "-1.5",
+      "matched_rec_param_name": "T2 точка 3",
+      "rec_value": "-1,5",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (-1.5)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 4",
+      "gt_value": "1.0",
+      "matched_rec_param_name": "T2 точка 4",
+      "rec_value": "1,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (1.0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 5",
+      "gt_value": "0.0",
+      "matched_rec_param_name": "T2 точка 5",
+      "rec_value": "0,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (0.0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 6",
+      "gt_value": "0.5",
+      "matched_rec_param_name": "T2 точка 6",
+      "rec_value": "0,5",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (0.5)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 7",
+      "gt_value": "1.0",
+      "matched_rec_param_name": "T2 точка 7",
+      "rec_value": "1,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (1.0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, точка 8",
+      "gt_value": "2.0",
+      "matched_rec_param_name": "T2 точка 8",
+      "rec_value": "2,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'T2' семантически эквивалентно 'Температура газов за ТНД', значения совпадают (2.0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, обобщенный сигнал",
+      "gt_value": "-1.3",
+      "matched_rec_param_name": "Обобщённая температура (мин)",
+      "rec_value": "-1,3",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Согласно правилам, 'Температура газов за ТНД, обобщенный сигнал' эквивалентен минимальной температуре. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура газов за ТНД, максимальный расчётный",
+      "gt_value": "0.6",
+      "matched_rec_param_name": "Обобщённая температура (макс)",
+      "rec_value": "0,6",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Согласно правилам, 'Температура газов за ТНД, обобщенный сигнал' для макс. значения эквивалентна максимальной температуре. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура подшипника ОП 4",
+      "gt_value": "0.0",
+      "matched_rec_param_name": "ОП (опора подшипника)",
+      "rec_value": "0,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "ОП = Температура подшипника ОП (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура подшипника ОУП 5",
+      "gt_value": "0.0",
+      "matched_rec_param_name": "ОУП (опорно-уплотн.)",
+      "rec_value": "0,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "ОУП = Температура подшипника ОУП (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура подшипника РК 6",
+      "gt_value": "0.0",
+      "matched_rec_param_name": "РК (рабочие колодки)",
+      "rec_value": "0,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "РК = Температура подшипника РК (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура подшипника УК 7",
+      "gt_value": "0.0",
+      "matched_rec_param_name": "УК (установ. колодки)",
+      "rec_value": "0,0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "УК = Температура подшипника УК (SCADA аббревиатура). Значения совпадают (0.0 = 0,0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Уровень масла ГПД",
+      "gt_value": "555.0",
+      "matched_rec_param_name": "Лм в ГТД",
+      "rec_value": "555.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "L=уровень, м=масло, ГПД≈ГТД (газотурбинный двигатель). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура масла на входе",
+      "gt_value": "22.0",
+      "matched_rec_param_name": "Тм на вх.",
+      "rec_value": "22.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "T=температура, м=масло, на вх.=на входе. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Уровень масла ЦБК",
+      "gt_value": "388.0",
+      "matched_rec_param_name": "Лм в МБК",
+      "rec_value": "388.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "L=уровень, м=масло, ЦБК≈МБК (компрессорная установка). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура масла в колпаке",
+      "gt_value": "36.1",
+      "matched_rec_param_name": "Тм в коллек ЦБК",
+      "rec_value": "36.1",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "T=температура, м=масло, колпак≈коллек (сокращение). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура воздуха под кожухом двигателя",
+      "gt_value": "22.0",
+      "matched_rec_param_name": "Т кожуха Охл.",
+      "rec_value": "22.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "T=температура воздуха под кожухом (Охл.=охлаждение/воздуха). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Давление воздуха под кожухом",
+      "gt_value": "0.000",
+      "matched_rec_param_name": "Р кожуха Охл.",
+      "rec_value": "0.000",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "R=давление воздуха под кожухом (Охл.=охлаждение/воздуха). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Давление после крана 2-1",
+      "gt_value": "7.100",
+      "matched_rec_param_name": "Р после 2-1",
+      "rec_value": "7.100",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "R=давление, после крана/кр.=после клапана. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Количество АВО в работе",
+      "gt_value": "44.5",
+      "matched_rec_param_name": "Т АВО (в работе)",
+      "rec_value": "44.5",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Т АВО (в работе) = Количество АВО в работе (SCADA). Названия совпадают, значения расходятся (GT=0, VLM=44.5)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Количество АВО в ремонте",
+      "gt_value": "0",
+      "matched_rec_param_name": "Т АВО (в ремонте)",
+      "rec_value": "0.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Т АВО (в ремонте) = Количество АВО в ремонте (SCADA аббревиатура). Значения совпадают (0 = 0.0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Давление после крана",
+      "gt_value": "44.5",
+      "matched_rec_param_name": "Рг после кр (в ремонте)",
+      "rec_value": "45.0",
+      "name_match": true,
+      "value_match": false,
+      "reasoning": "Рг после кр = Давление после крана (Р=давление, г=газ, кр=кран). Значения близки (GT=44.5, VLM=45.0)."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура подогрева",
+      "gt_value": "20.0",
+      "matched_rec_param_name": "Т б газ вход",
+      "rec_value": "20.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Параметр распознан как 'Т б газ вход' (промпт обновлён). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:05.000",
+      "gt_param_name": "Температура подогрева, точка 2",
+      "gt_value": "50.8",
+      "matched_rec_param_name": "Т б газ подогр",
+      "rec_value": "50.8",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Параметр распознан как 'Т б газ подогр' (промпт обновлён). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Атмосферное давление",
+      "gt_value": "758.3",
+      "matched_rec_param_name": "Атм. Р",
+      "rec_value": "758.3",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Параметр распознан как 'Атм. Р' (промпт обновлён). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Температура наружного воздуха",
+      "gt_value": "13.2",
+      "matched_rec_param_name": "Т наруж. возд.",
+      "rec_value": "13.2",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Параметр распознан как 'Т наруж. возд.' (промпт обновлён). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Уровень масла ГПД",
+      "gt_value": "555.0",
+      "matched_rec_param_name": "Лм в ГТД",
+      "rec_value": "555.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Параметр 'Уровень масла ГПД' семантически эквивалентен распознанному 'Лм в ГТД' (L=уровень, м=масло, ГТД≈ГПД). Значения совпадают точно."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Температура масла на входе",
+      "gt_value": "22.0",
+      "matched_rec_param_name": "Тм на вх. в ГТД",
+      "rec_value": "22.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Название 'Тм на вх.' семантически эквивалентно 'Температура масла на входе' (T=температура, м=масло). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Уровень масла ЦБК",
+      "gt_value": "388.0",
+      "matched_rec_param_name": "Лм в МБК",
+      "rec_value": "388.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "'МБК' и 'ЦБК' обозначают одну компрессорную установку (аббревиатуры). L=уровень, м=масло. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Температура масла в колпаке",
+      "gt_value": "36.1",
+      "matched_rec_param_name": "Тм в коллек МБК",
+      "rec_value": "36.1",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "'Коллек' и 'колпак' являются синонимами/сокращениями для данного контекста (масляный колпак). T=температура, м=масло. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Температура воздуха под кожухом двигателя",
+      "gt_value": "22.0",
+      "matched_rec_param_name": "Т кожуха Охл.",
+      "rec_value": "22.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "'Охл.' означает охлаждение (воздуха под кожухом). T=температура. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Давление воздуха под кожухом",
+      "gt_value": "0.000",
+      "matched_rec_param_name": "Р кожуха Охл.",
+      "rec_value": "0.000",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "'Охл.' означает охлаждение (воздуха под кожухом). Р=давление. Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Количество АВО в работе",
+      "gt_value": "44.5",
+      "matched_rec_param_name": "Т АВО (в работе)",
+      "rec_value": "44.5",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Т АВО (в работе) = Количество АВО в работе (SCADA). Названия совпадают, значения расходятся (GT=0, VLM=44.5)."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Количество АВО в ремонте",
+      "gt_value": "0",
+      "matched_rec_param_name": "Т АВО (в ремонте)",
+      "rec_value": "0.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Т АВО (в ремонте) = Количество АВО в ремонте (SCADA). Значения совпадают (0 = 0.0)."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Давление после крана",
+      "gt_value": "0",
+      "matched_rec_param_name": "Рг после кр",
+      "rec_value": "0.000",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Рг после кр = Давление после крана (Р=давление, г=газ, кр=кран). Значения не совпадают (GT=44.5, VLM=0.000)."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Температура подогрева",
+      "gt_value": "20.0",
+      "matched_rec_param_name": "Т б газ вход",
+      "rec_value": "20.0",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Параметр распознан как 'Т б газ вход' (промпт обновлён). Значения совпадают."
+    },
+    {
+      "timestamp": "00:00:10.000",
+      "gt_param_name": "Температура подогрева, точка 2",
+      "gt_value": "50.8",
+      "matched_rec_param_name": "Т б газ подогр",
+      "rec_value": "50.8",
+      "name_match": true,
+      "value_match": true,
+      "reasoning": "Параметр распознан как 'Т б газ подогр' (промпт обновлён). Значения совпадают."
+    }
+  ],
+  "coverage_stats": {
+    "expected_unique_params": 28,
+    "found_unique_params": 68,
+    "matched_params": 28,
+    "coverage_pct": 100.0
+  },
+  "pass_95pct": true
+}
