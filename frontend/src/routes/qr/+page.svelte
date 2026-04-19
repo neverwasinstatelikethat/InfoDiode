@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { pipelineStore, type PipelineStatusResponse } from '$lib/stores/pipeline.svelte';
 	import { authStore } from '$lib/stores/auth.svelte';
+	import { API_BASE } from '$lib/config';
 	import StatusBadge from '$lib/components/StatusBadge.svelte';
 
 	/** QR status for a video (matches backend /qr/status/{video_id} response) */
@@ -25,9 +26,6 @@
 		qrLoading: boolean;
 		generating: boolean;
 	}
-
-	/** API base URL */
-	const API_BASE = 'http://localhost:8000/api';
 
 	let videos = $state<VideoWithQrStatus[]>([]);
 	let loading = $state(true);

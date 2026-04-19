@@ -39,6 +39,7 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - INFODIODE_DOCKER=true
+      - INFODIODE_VLM_BASE_URL=http://llama-server:8090
       - INFODIODE_REDIS_URL=redis://redis:6379/0
       - INFODIODE_CELERY_BROKER_URL=redis://redis:6379/0
       - INFODIODE_CELERY_RESULT_BACKEND=redis://redis:6379/0
@@ -48,10 +49,8 @@ services:
       - INFODIODE_QR_CODES_DIR=/app/data/qr_codes
       - INFODIODE_ENCRYPTION_KEYS_DIR=/app/data/encryption_keys
       - INFODIODE_MODELS_DIR=/app/models
-      - INFODIODE_VLM_BASE_URL=http://llama-server:8090
     volumes:
       - video-data:/app/data
-      - model-cache:/app/models
     ports:
       - "8000:8000"
     depends_on:
@@ -59,6 +58,12 @@ services:
         condition: service_healthy
       redis:
         condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
     deploy:
       resources:
         reservations:
@@ -71,10 +76,9 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    runtime: nvidia
     environment:
-      - NVIDIA_VISIBLE_DEVICES=all
       - INFODIODE_DOCKER=true
+      - INFODIODE_VLM_BASE_URL=http://llama-server:8090
       - INFODIODE_REDIS_URL=redis://redis:6379/0
       - INFODIODE_CELERY_BROKER_URL=redis://redis:6379/0
       - INFODIODE_CELERY_RESULT_BACKEND=redis://redis:6379/0
@@ -86,29 +90,23 @@ services:
       - INFODIODE_MODELS_DIR=/app/models
     volumes:
       - video-data:/app/data
-      - model-cache:/app/models
     command: ["python3.12", "-m", "celery", "-A", "app.celery_app", "worker", "--loglevel=info", "--concurrency=1"]
     depends_on:
       llama-server:
         condition: service_healthy
       redis:
         condition: service_started
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        - PUBLIC_API_URL=http://localhost:8000
     ports:
       - "5173:5173"
     environment:
-      - PUBLIC_API_URL=http://gpu-pipeline:8000
+      - ORIGIN=http://localhost:5173
     depends_on:
       - gpu-pipeline
 
@@ -118,6 +116,11 @@ services:
       - "6379:6379"
     volumes:
       - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
   mailpit:
     image: axllent/mailpit:latest
@@ -130,5 +133,4 @@ services:
 
 volumes:
   video-data:
-  model-cache:
   redis-data:

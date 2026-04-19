@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+data/
+models/
+debug_frames/
+tests/
+*.egg-info/
+.venv/
+.env
+=0.30.7
