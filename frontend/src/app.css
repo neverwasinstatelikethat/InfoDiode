@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Tell Tailwind v4 to scan Svelte files for class detection */
+@source "../src/lib/components/*.svelte";
+@source "../src/routes/**/*.svelte";
+
 @theme {
   /* ── Refined Dark Theme ── */
   --color-base:      #09090B;
@@ -15,8 +19,8 @@
   /* Accent — indigo for primary actions */
   --color-accent:          #6366F1;
   --color-accent-hover:    #818CF8;
-  --color-accent-subtle:   #6366F1/10;
-  --color-accent-muted:    #6366F1/20;
+  --color-accent-subtle:   oklch(0.457 0.227 277.1 / 0.1);
+  --color-accent-muted:    oklch(0.457 0.227 277.1 / 0.2);
 
   /* Semantic */
   --color-success:    #22C55E;
